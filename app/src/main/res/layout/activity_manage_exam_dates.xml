@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#C7193D"
+        android:padding="12dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvUniversity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trường Đại Học Bách Khoa Hà Nội"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvFaculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viện Đào Tạo Liên Tục"
+            android:textSize="16sp"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center"
+            android:paddingTop="4dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddExamDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm ngày thi"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewExamDates"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

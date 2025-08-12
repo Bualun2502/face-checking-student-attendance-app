@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/etExamName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên kỳ thi" />
+
+    <EditText
+        android:id="@+id/etExamDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô tả kỳ thi"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

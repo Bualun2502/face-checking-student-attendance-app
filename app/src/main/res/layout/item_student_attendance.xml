@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F9F9F9"
+    android:padding="12dp"
+    android:layout_margin="8dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nguyễn Văn A (SV001)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#333333" />
+
+    <ImageView
+        android:id="@+id/ivStatusIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="Trạng thái điểm danh"
+        />
+
+    <!-- Thêm 1 TextView hiển thị ghi chú -->
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghi chú:"
+        android:textSize="14sp"
+        android:textColor="#555"
+        android:layout_marginTop="4dp"/>
+
+    <Button
+        android:id="@+id/btnToggleStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chỉnh sửa trạng thái"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>

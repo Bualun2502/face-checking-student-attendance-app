@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "441767783326",
+    "firebase_url": "https://doantest1-7b9bc-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "doantest1-7b9bc",
+    "storage_bucket": "doantest1-7b9bc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441767783326:android:58b9ee0ce026aa37bdc48f",
+        "android_client_info": {
+          "package_name": "com.example.doantest1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHKC3eJwpArOjtMFc6iY5zCe1hDxkMg64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFFFFF">
+
+    <!-- Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#C7193D"
+        android:padding="12dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvUniversity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trường Đại Học Bách Khoa Hà Nội"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvFaculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vện Đào Tạo Liên Tục"
+            android:textSize="16sp"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center"
+            android:paddingTop="4dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnFaceCheck"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/purple_500"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerInside"
+        android:padding="16dp"
+        android:contentDescription="Điểm danh bằng khuôn mặt"
+        android:src="@drawable/face_check_icon" />
+
+    <TextView
+        android:id="@+id/txtInvigilator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giám thị coi thi:"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/btnExportPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In kết quả điểm danh"
+        android:layout_margin="12dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách sinh viên dự thi"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:paddingBottom="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:contentDescription="Danh sách sinh viên điểm danh" />
+
+
+</LinearLayout>

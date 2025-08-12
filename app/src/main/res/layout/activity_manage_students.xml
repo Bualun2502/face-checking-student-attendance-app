@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#C7193D"
+        android:padding="12dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvUniversity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trường Đại Học Bách Khoa Hà Nội"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvFaculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viện Đào Tạo Liên Tục"
+            android:textSize="16sp"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center"
+            android:paddingTop="4dp" />
+    </LinearLayout>
+
+    <!-- Nội dung chính căn giữa màn hình -->
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/btnAddStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm sinh viên"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnViewStudents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tìm kiếm thông tin sinh viên" />
+    </LinearLayout>
+
+</RelativeLayout>

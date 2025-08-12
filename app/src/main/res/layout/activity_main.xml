@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#C7193D"
+        android:padding="12dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvUniversity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trường Đại Học Bách Khoa Hà Nội"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvFaculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viện Đào Tạo Liên Tục"
+            android:textSize="16sp"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center"
+            android:paddingTop="4dp" />
+    </LinearLayout>
+
+    <!-- Nội dung form -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="32dp">
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:text="Xin chào Admin,\nHôm nay: --/--/----"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/btnManageTeachers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý giáo viên"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnManageStudents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý Sinh viên" />
+
+
+        <Button
+            android:id="@+id/btnManageExamPeriods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý kỳ thi"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnManageAttendanceResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý kết quả điểm danh"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng xuất"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@android:color/holo_red_light" />
+    </LinearLayout>
+
+</LinearLayout>

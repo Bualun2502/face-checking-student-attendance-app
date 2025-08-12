@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#F9F9F9"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/textViewSessionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên ca thi"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewSessionTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời gian"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnEditSession"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sửa"
+            android:layout_weight="1"
+            android:backgroundTint="#FFA726"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDeleteSession"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Xóa"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#E53935"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>
